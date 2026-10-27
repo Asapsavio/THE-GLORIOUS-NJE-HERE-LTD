@@ -73,3 +73,9 @@ footer {
     padding: 0.75rem;
   }
 }
+input, textarea {
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #23c3f3;
+  padding: 0.4rem;
+}
