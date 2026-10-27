@@ -3,4 +3,4 @@ import os
 
 load_dotenv()
 shop_name = os.getenv("SHOP_NAME", "Unknown shop")
-print(f"Welcome to {shop_name}")
+print(f"WELCOME TO {shop_name}")
