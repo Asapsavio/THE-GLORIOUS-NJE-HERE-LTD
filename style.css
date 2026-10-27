@@ -1,0 +1,36 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #111111;
+}
+
+header {
+  background-color: #111111;
+  color: #23c3f3;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #23c3f3;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+main {
+  padding: 1rem;
+  background-color: #111111;
+  color: #23c3f3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: rgb(219, 17, 17);
+}
