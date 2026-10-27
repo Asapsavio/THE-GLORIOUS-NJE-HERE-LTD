@@ -34,3 +34,42 @@ footer {
   padding: 1rem;
   color: rgb(219, 17, 17);
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 0.75rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin-right: 0;
+    padding: 0.4rem 0;
+  }
+
+  main {
+    padding: 0.75rem;
+  }
+}
