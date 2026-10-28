@@ -1,27 +1,40 @@
 body {
-  font-family:  sans-serif, Times, serif, 'Times New Roman',;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
   background-color: #111111;
-
+  color: #23c3f3;
+}
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   background-color: #111111;
   color: #23c3f3;
-  padding: 1rem;
-  writing-mode:horizontal-tb;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+header h1 {
   margin: 0;
+  font-size: 1.4rem;
 }
 
-nav a {
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
   color: #23c3f3;
   text-decoration: none;
-  margin-right: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -35,6 +48,7 @@ footer {
   padding: 1rem;
   color: rgb(219, 17, 17);
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -47,7 +61,15 @@ footer {
   font-weight: bold;
   z-index: 1000;
 }
-/* Mobile adjustments */
+
+input, textarea {
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #23c3f3;
+  padding: 0.4rem;
+}
+
+/* Mobile adjustments — only one media query */
 @media (max-width: 600px) {
   body {
     padding: 0.5rem;
@@ -55,28 +77,23 @@ footer {
   }
 
   header {
-    padding: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
   }
 
-  nav ul {
-    display: flex;
+  header nav ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  nav a {
+  header nav a {
     display: block;
-    margin-right: 0;
     padding: 0.4rem 0;
   }
 
   main {
     padding: 0.75rem;
   }
-}
-input, textarea {
-  background-color: #222222;
-  color: #ffffff;
-  border: 1px solid #23c3f3;
-  padding: 0.4rem;
 }
